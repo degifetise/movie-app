@@ -1,0 +1,117 @@
+/* Home.css */
+
+/* Base styles */
+.home {
+  min-height: 100vh;
+  padding: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  font-family: "Inter", sans-serif;
+  margin-top: 10rem;
+}
+
+/* Light/Dark themes */
+.home.light {
+  background: #f5f5f5;
+  color: #222;
+}
+
+.home.dark {
+  background: #121212;
+  color: #eee;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+background: rgb(2, 70, 104);
+padding: 1.5rem .3rem;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  font-size: 1rem;
+  font-size: 2rem;
+}
+
+.search-btn {
+  padding: 12px 20px;
+  border: none;
+  background: rgb(2, 70, 104);
+  color: #fff;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #b20710;
+}
+
+/* Dark mode toggle */
+.light-cont {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.light-cont button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+}
+
+/* Movies grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .search-btn {
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
