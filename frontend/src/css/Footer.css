@@ -1,0 +1,28 @@
+.app-footer {
+color: #fff;
+text-align: center;
+padding: 1.5rem;
+margin-top: auto;
+}
+.app-footer p {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+.app-footer .creator-info .footer-links {
+align-items: center;
+justify-content: center;
+gap: 2.1rem;
+display: flex;
+}
+.footer-links a {
+text-decoration: none;
+font-size: 2rem;
+color: #efc123;
+}
+@media screen and (max-width: 480px) {
+.footer-links {
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem; 
+}
+ }

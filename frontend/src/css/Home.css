@@ -99,6 +99,9 @@
     flex-direction: column;
     align-items: stretch;
   }
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
 
   .search-input {
     border-radius: 30px;
@@ -114,5 +117,21 @@
   .movies-grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 280px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 180px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
   }
 }
