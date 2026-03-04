@@ -2,8 +2,7 @@ import React from "react";
 import "../css/MovieCard.css";
 import { useMovieContext } from "../Contexts";
 function MovieCard({ movie }) {
-  const { isFavorite, addToFavorites, removeFromFavorites } =
-    useMovieContext();
+  const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
   const favorite = isFavorite(movie.imdbID);
   function onFavorite(e) {
     e.preventDefault();
@@ -29,6 +28,16 @@ function MovieCard({ movie }) {
       <div className="movie-info">
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
+        <div className="direct-link">
+          <a
+            href={`https://www.imdb.com/title/${movie.imdbID}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="imdb-link"
+          >
+            Live
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -28,8 +28,9 @@
   justify-content: center;
   margin-bottom: 20px;
   width: 100%;
-background: rgb(2, 70, 104);
-padding: 1.5rem .3rem;
+  background: rgb(2, 70, 104);
+  padding: 1.5rem 0.3rem;
+  flex: 1;
 }
 
 .search-input {
@@ -46,15 +47,15 @@ padding: 1.5rem .3rem;
 .search-btn {
   padding: 12px 20px;
   border: none;
-  background: rgb(2, 70, 104);
-  color: #fff;
+  background: #ccc;
+  color: #134;
   border-radius: 0 30px 30px 0;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .search-btn:hover {
-  background: #b20710;
+  background: #efc;
 }
 
 /* Dark mode toggle */
