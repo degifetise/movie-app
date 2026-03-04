@@ -1,16 +1,54 @@
-# React + Vite
+✨ Excited to share my latest project: a React Movie Search App powered by the OMDb API!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎬 Key Features I Built
 
-Currently, two official plugins are available:
+🔍 Search Functionality – Live movie search with error handling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+❤️ Favorites System – Add/remove movies using Context API
 
-## React Compiler
+🌗 Dark/Light Mode Toggle – Modern UI with theme switching
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🖼️ Reusable Components – Navbar, Home, MovieCard, Favorites
 
-## Expanding the ESLint configuration
+⚡ API Integration – Fetching real movie data with resilience against errors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📱 Responsive Design – Clean Netflix-style layout with CSS grid
+
+📂 Project Structure Overview
+
+Code
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── MovieCard.jsx
+ │
+ ├── pages/
+ │    ├── Home.jsx
+ │    ├── Favorites.jsx
+ │
+ ├── contexts/
+ │    ├── Contexts.jsx
+ │
+ ├── services/
+ │    ├── api.js
+ │
+ ├── css/
+ │    ├── Navbar.css
+ │    ├── MovieCard.css
+ │    ├── Home.css
+ │    ├── Favorite.css
+💡 Lessons Learned
+
+Modularity makes apps scalable and easier to debug
+
+Context API simplifies global state management
+
+User experience is elevated by small touches like empty states and theme toggles
+
+Handling edge cases is just as important as fetching data successfully
+
+🚀 This project strengthened my skills in React, API integration, UI/UX design, and state management — and it’s now a solid addition to my portfolio.
+
+👉 Always open to feedback, collaboration, and opportunities in front-end development!
+
+#ReactJS #WebDevelopment #Frontend #MovieApp #PortfolioProject #OMDbAPI #UIUX #CodingJourney
