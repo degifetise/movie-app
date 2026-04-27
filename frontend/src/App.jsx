@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <>
+    <div className="app">
       <MovieProvider>
         <NavBar />
         <main className="main-content">
@@ -18,7 +18,7 @@ function App() {
         </main>
       </MovieProvider>
 <Footer />
-    </>
+    </div>
   );
 }
 
