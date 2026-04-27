@@ -9,6 +9,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   flex: 1 1 calc(25%, -1rem);
+  justify-content: center;
+  margin: auto;
 }
 
 .movie-card:hover {
@@ -102,11 +104,8 @@
 
 @media screen and (max-width: 768px) {
   .movie-card {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto 1.5rem;
-    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .movie-info {
@@ -139,8 +138,8 @@
 
 @media screen and (max-width: 480px) {
   .movie-card {
-    max-width: 100%;
-    margin: 0 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .movie-poster {
