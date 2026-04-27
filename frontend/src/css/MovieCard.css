@@ -1,4 +1,9 @@
 /* MovieCard.css */
+.movie-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
 
 .movie-card {
   display: flex;
@@ -102,10 +107,9 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .movie-card {
-    display: grid;
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .movie-card-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .movie-info {
@@ -136,9 +140,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .movie-card {
-    display: grid;
+@media (max-width: 480px) {
+  .movie-card-grid {
     grid-template-columns: 1fr;
   }
 
