@@ -13,8 +13,8 @@ function MovieCard({ movie }) {
   }
 
   return (
-    <div className="movie-card">
-
+    <div className="movie-card-grid">
+      <div className="movie-card">
         <div className="movie-poster">
           <img src={movie.Poster} alt={movie.Title} />
           <div className="movie-overlay">
@@ -40,6 +40,7 @@ function MovieCard({ movie }) {
             </a>
           </div>
         </div>
+      </div>
     </div>
   );
 }
